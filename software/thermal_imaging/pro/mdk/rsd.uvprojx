@@ -187,7 +187,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>ARM_MATH_CM3</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\components\bsp\inc</IncludePath>
+              <IncludePath>..\..\components\bsp\inc;..\..\lib\fatfs;..\..\lib\lui;..\..\lib\jpeg</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -415,6 +415,71 @@
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\components\bsp\src\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>ms5611.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\components\bsp\src\ms5611.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_sdio_sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\components\bsp\src\bsp_sdio_sdcard.c</FilePath>
+            </File>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\components\bsp\src\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>audio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\components\bsp\src\audio.c</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\components\bsp\src\fonts.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>fatfs</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\fatfs\diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\fatfs\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>ccsbcs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\fatfs\option\ccsbcs.c</FilePath>
+            </File>
+            <File>
+              <FileName>syscall.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\fatfs\option\syscall.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>jpeg</GroupName>
+          <Files>
+            <File>
+              <FileName>jpgPort.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\jpeg\jpgPort.c</FilePath>
+            </File>
+            <File>
+              <FileName>tjpgd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\jpeg\tjpgd.c</FilePath>
             </File>
           </Files>
         </Group>
